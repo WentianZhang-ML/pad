@@ -5,11 +5,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <meta name="keywords" content="CLIMS">
-    <meta name="description" content="CLIMS">
+    <meta name="keywords" content="FRT-PAD">
+    <meta name="description" content="FRT-PAD">
     <!--<link href="CSS/bootstrap.min.css" media="all" rel="stylesheet">-->
     <link href="./files/main.css" media="all" rel="stylesheet">
-    <title>CLIMS: Cross Language Image Matching for Weakly Supervised Semantic Segmentation</title>
+    <title>Effective Presentation Attack Detection Driven by Face Related Task</title>
     <style>
         font.italic {
             font-style: italic;
@@ -38,7 +38,7 @@
             <tbody>
                 <tr>
                     <td align="center">
-                        <h1>Cross Language Image Matching for Weakly Supervised Semantic Segmentation </h1>
+                        <h1>Effective Presentation Attack Detection Driven by Face Related Task </h1>
                     </td>
                 </tr>
                 <tr>
@@ -46,13 +46,16 @@
                 </tr>
                 <tr>
                     <td align="center">
-                        <a href="https://sierkinhane.github.io" target="_blank">Jinheng Xie</a>&nbsp;&nbsp;&nbsp;
-                        <a href="https://scholar.google.com.sg/citations?user=oK8Q-HwAAAAJ&hl=en" target="_blank">Xianxu Hou</a> &nbsp;&nbsp;&nbsp; Kai Ye &nbsp;&nbsp;&nbsp;
-                        <a href="https://scholar.google.com/citations?user=AZ_y9HgAAAAJ&hl=en" target="_blank">Linlin Shen</a> &nbsp;&nbsp;&nbsp;
-
+                        <a href="https://wentianzhang-ml.github.io" target="_blank">Wentian Zhang<sup>1,&#8224;</sup></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://haozheliu-st.github.io" target="_blank">Haozhe Liu<sup>2,&#8224;</sup></a> &nbsp;&nbsp;&nbsp; 
+                        <a href="https://scholar.google.com/citations?user=45uLWocAAAAJ" target="_blank">Feng Liu<sup>1</sup></a> &nbsp;&nbsp;&nbsp; 
+                        <a href="https://scholar.google.com/citations?user=OIYIrmIAAAAJ" target="_blank">Raghavendra Ramachandra<sup>3</sup></a> &nbsp;&nbsp;&nbsp;
+                        <a href="https://scholar.google.com/citations?user=qsopcXIAAAAJ" target="_blank">Christoph Busch<sup>3</sup></a> &nbsp;&nbsp;&nbsp;
                         <p align="center">
                             <small>
-                                Computer Vision Institute, Shenzhen University
+                                <sup>1</sup>Computer Vision Institute, Shenzhen University
+                                <sup>2</sup>King Abdullah University of Science and Technology
+                                <sup>3</sup>Norwegian Biometrics Laboratory (NBL), Norwegian University of Science and Technology
                             </small>
                         </p>
 
@@ -77,7 +80,7 @@
                 </tr>
                 <tr>
                     <td align="center">
-                        <img src="./files/CLIMS.png" border="12" height="380">
+                        <img src="./files/frt-pad.png" border="12" height="380">
                     </td>
                 </tr>
                 <tr>
@@ -100,7 +103,7 @@
                 <tbody>
                     <tr>
                         <td align="left">
-                            &nbsp;&nbsp;&nbsp;&nbsp; It has been widely known that CAM (Class Activation Map) usually only activates discriminative object regions and falsely includes lots of object-related backgrounds. As only a fixed set of image-level object labels are available to the WSSS (weakly supervised semantic segmentation) model, it could be very difficult to suppress those diverse background regions consisting of open set objects. In this paper, we propose a novel Cross Language Image Matching (CLIMS) framework, based on the recently introduced Contrastive Language-Image Pre-training (CLIP) model, for WSSS. The core idea of our framework is to introduce natural language supervision to activate more complete object regions and suppress closely-related open background regions. In particular, we design object, background region and text label matching losses to guide the model to excite more reasonable object regions for CAM of each category. In addition, we design a co-occurring background suppression loss to prevent the model from activating closely-related background regions, with a predefined set of class-related background text descriptions. These designs enable the proposed CLIMS to generate a more complete and compact activation map for the target objects. Extensive experiments on PASCAL VOC2012 dataset show that our CLIMS significantly outperforms the previous state-of-the-art methods.
+                            &nbsp;&nbsp;&nbsp;&nbsp;  The robustness and generalization ability of Presentation Attack Detection (PAD) methods is critical to ensure the security of Face Recognition Systems (FRSs). However, in a real scenario, Presentation Attacks (PAs) are various and it is hard to predict the Presentation Attack Instrument (PAI) species that will be used by the attacker. Existing PAD methods are highly dependent on the limited training set and cannot generalize well to unknown PAI species. Unlike this specific PAD task, other face related tasks trained by huge amount of real faces (e.g. face recognition and attribute editing) can be effectively adopted into different application scenarios. Inspired by this, we propose to trade position of PAD and face related work in a face system and apply the free acquired prior knowledge from face related tasks to solve face PAD, so as to improve the generalization ability in detecting PAs. The proposed method, first introduces task specific features from other face related task, then, we design a Cross-Modal Adapter using a Graph Attention Network (GAT) to re-map such features to adapt to PAD task. Finally, face PAD is achieved by using the hierarchical features from a CNN-based PA detector and the re-mapped features. The experimental results show that the proposed method can achieve significant improvements in the complicated and hybrid datasets, when compared with the state-of-the-art methods. In particular, when training on the datasets OULU-NPU, CASIA-FASD, and Idiap Replay-Attack, we obtain HTER (Half Total Error Rate) of 5.48% for the testing dataset MSU-MFSD, outperform- ing the baseline by 7.39%. 
                             </br>
                            
                             </p>
@@ -114,32 +117,33 @@
     </section>
 
     <section id="Paper" class="sectionwhite">
-        <h3> Paper</h3>
+        <h3> href="https://link.springer.com/chapter/10.1007/978-3-031-20065-6_24" target="_blank">
+                            PaPer</h3>
         <font size="normal">
             <table cellpadding=0 cellspacing=0 width="100%" class="sectionwhite">
                 <tr>
                     <td align="left">
                         <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a ="https://arxiv.org/abs/1910.06278"> arxiv </a> -->
-                        <a href="https://arxiv.org/abs/2203.02668" target="_blank">
-                            <img src="papers/CLIMS-page-0.png" style="border:1px solid black" width="15.5%">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-20065-6_24" target="_blank">
+                            <img src="papers/FRT-PAD-page-0.png" style="border:1px solid black" width="15.5%">
                         </a>
-                        <a href="https://arxiv.org/abs/2203.02668" target="_blank">
-                            <img src="papers/CLIMS-page-1.png" style="border:1px solid black" width="15.5%">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-20065-6_24" target="_blank">
+                            <img src="papers/FRT-PAD-page-2.png" style="border:1px solid black" width="15.5%">
                         </a>
-                        <a href="https://arxiv.org/abs/2203.02668" target="_blank">
-                            <img src="papers/CLIMS-page-2.png" style="border:1px solid black" width="15.5%">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-20065-6_24" target="_blank">
+                            <img src="papers/FRT-PAD-page-5.png" style="border:1px solid black" width="15.5%">
                         </a>
-                        <a href="https://arxiv.org/abs/2203.02668" target="_blank">
-                            <img src="papers/CLIMS-page-3.png" style="border:1px solid black" width="15.5%">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-20065-6_24" target="_blank">
+                            <img src="papers/FRT-PAD-page-6.png" style="border:1px solid black" width="15.5%">
                         </a>
-                        <a href="https://arxiv.org/abs/2203.02668" target="_blank">
-                            <img src="papers/CLIMS-page-4.png" style="border:1px solid black" width="15.5%">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-20065-6_24" target="_blank">
+                            <img src="papers/FRT-PAD-page-10.png" style="border:1px solid black" width="15.5%">
                         </a>
-                        <a href="https://arxiv.org/abs/2203.02668" target="_blank">
-                            <img src="papers/CLIMS-page-5.png" style="border:1px solid black" width="15.5%">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-20065-6_24" target="_blank">
+                            <img src="papers/FRT-PAD-page-11.png" style="border:1px solid black" width="15.5%">
                         </a>
-                        <a href="https://arxiv.org/abs/2203.02668" target="_blank">
-                            Arxiv
+                        <a href="papers/appendix.pdf" target="_blank">
+                            APPENDIX
                         </a>
                     </td>
                 </tr>
@@ -162,7 +166,7 @@
             <table cellpadding=3 cellspacing=0 width="100%" class="sectionwhite">
                 <tr>
                     <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We will release the training and testing code and the pretrained model at <a href="https://github.com/CVI-SZU/CLIMS"> GitHub</a>.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We will release the training and testing code and the pretrained model at <a href="https://github.com/WentianZhang-ML/FRT-PAD"> GitHub</a>.
                        </br>
                         <tr>
                             <td></td>
